@@ -1,5 +1,5 @@
 // Replace 'YOUR_API_KEY_HERE' with your actual Google AI API key from Google AI Studio
-const API_KEY = 'AIzaSyBbzwF8qA_uSAa7aepdGfv9dNlqBBkRa2E';
+const API_KEY = ' ';//add your api key
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent?key=${API_KEY}`;
 
 document.getElementById('submitBtn').addEventListener('click', async () => {
@@ -68,3 +68,4 @@ function toBase64(file) {
         reader.onerror = error => reject(error);
     });
 }
+
