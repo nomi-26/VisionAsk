@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Chatbot</title>
+    <style>
+        body {
+            width: 400px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #imageInput {
+            margin-bottom: 10px;
+        }
+        #prompt {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        #submitBtn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #response {
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Chatbot</h2>
+    <input type="file" id="imageInput" accept="image/*">
+    <textarea id="prompt" placeholder="Ask a question about the image..."></textarea>
+    <button id="submitBtn">Submit</button>
+    <div id="response"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
